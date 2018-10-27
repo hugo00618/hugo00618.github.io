@@ -1,0 +1,37 @@
+* {
+	font-family: 'Noto Serif', serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: #eff;
+}
+
+.intro {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+#canvas {
+	position: relative;
+	display: block;
+	flex-grow: 1;
+	text-align: center;
+}
+
+canvas {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+h1 {
+	margin-bottom: 48px;
+}

@@ -52,7 +52,7 @@ $(document).ready(function() {
 	model = new THREE.Group();
 	var loader = new THREE.OBJLoader();
 	loader.load(
-		'ocean.obj',
+		'assets/ocean.obj',
 		function ( object ) {
 			setMaterial(object, matOcean);
 			addObject(object);
@@ -60,7 +60,7 @@ $(document).ready(function() {
 	);
 
 	loader.load(
-		'land.obj',
+		'assets/land.obj',
 		function ( object ) {
 			setMaterial(object, matLand);
 			addObject(object);
@@ -68,7 +68,7 @@ $(document).ready(function() {
 	);
 
 	loader.load(
-		'ice.obj',
+		'assets/ice.obj',
 		function ( object ) {
 			setMaterial(object, matIce);
 			addObject(object);
