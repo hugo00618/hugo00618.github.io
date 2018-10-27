@@ -18,8 +18,8 @@ $(document).ready(function() {
 	camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
 
 	renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
-	var containerHeight = $('#canvas').innerHeight();
-	renderer.setSize(containerHeight, containerHeight);
+	var containerMinSize = Math.min($('#canvas').innerHeight(), $('#canvas').innerWidth());
+	renderer.setSize(containerMinSize, containerMinSize);
 	$('#canvas').append( renderer.domElement );
 
 	// control
@@ -91,9 +91,8 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	$('canvas').css('display', 'none');
-	var containerHeight = $('#canvas').innerHeight();
-	console.log(containerHeight);
+	var containerMinSize = Math.min($('#canvas').innerHeight(), $('#canvas').innerWidth());
 	$('canvas').css('display', 'initial');
 
-	renderer.setSize(containerHeight, containerHeight);
+	renderer.setSize(containerMinSize, containerMinSize);
 });
