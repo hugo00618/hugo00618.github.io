@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hugo Yu</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<style type="text/css">
+		* {
+			font-family: 'Noto Serif', serif;
+		}
+
+		html, body {
+			height: 100%;
+		}
+
+		body {
+			margin: 0;
+			background: #eff;
+		}
+
+		.intro {
+			height: 100%;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+		}
+
+		#canvas {
+			display: block;
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		h1 {
+			margin-bottom: 48px;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="three.min.js"></script>
+	<script src="ObjectLoader.js"></script>
+	<script src="OrbitControls.js"></script>
+	<script src="earth.js"></script>
+
+</head>
+
+<body>
+	<div class="intro">
+		<div id="canvas"></div>
+		<h1>three.js</h1>
+	</div>
+</body>
+
+</html>
