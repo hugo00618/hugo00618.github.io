@@ -13,7 +13,7 @@ var addObject = function(object) {
 	}
 }
 
-$(document).ready(function() {
+var init3D = function() {
 	scene = new THREE.Scene();
 	
 	renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
@@ -92,6 +92,20 @@ $(document).ready(function() {
 	};
 
 	animate();
+}
+
+$(document).ready(function() {
+	init3D();
+
+	$('#fullpage').fullpage({
+		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+
+		verticalCentered: false
+	}); 
+
+	$('#btnLearnMore').click(function() {
+		$.fn.fullpage.moveSectionDown();
+	});
 });
 
 $(window).resize(function() {
@@ -100,4 +114,10 @@ $(window).resize(function() {
 	$('canvas').css('display', 'initial');
 
 	renderer.setSize(containerMinSize, containerMinSize);
+
+	camera.left = containerMinSize / -2;
+	camera.right = containerMinSize / 2;
+	camera.top = containerMinSize / 2;
+	camera.bottom = containerMinSize / -2;
+	camera.updateProjectionMatrix();
 });

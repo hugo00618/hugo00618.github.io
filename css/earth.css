@@ -1,5 +1,6 @@
 * {
-	font-family: 'Noto Serif', serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 }
 
 html, body {
@@ -11,7 +12,7 @@ body {
 	background: #eff;
 }
 
-.intro {
+.landing {
 	height: 100%;
 	overflow: hidden;
 	display: flex;
@@ -32,6 +33,16 @@ canvas {
 	transform: translateX(-50%) translateY(-50%);
 }
 
+.learnmore_wrapper {
+	text-align: center;
+}
+
+.btn_learnmore {
+	margin: 16px;
+	margin-bottom: 32px;
+	outline:none;
+}
+
 h1 {
-	margin-bottom: 48px;
+	font-weight: 700;
 }

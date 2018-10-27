@@ -4,22 +4,34 @@
 <head>
 	<title>Hugo Yu</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 	<link href="css/earth.css" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script src="js/three.min.js"></script>
 	<script src="js/ObjectLoader.js"></script>
 	<script src="js/OrbitControls.js"></script>
+
+	<script src="js/fullpage.js"></script>
+
 	<script src="js/earth.js"></script>
 
 </head>
 
 <body>
-	<div class="intro">
+	<div id="fullpage" style="height: 100%">
+	<div class="landing section">
 		<div id="canvas"></div>
-		<h1>three.js</h1>
+		<div class="learnmore_wrapper">
+			<input id="btnLearnMore" class="btn_learnmore" type="image" src="assets/ic_learnmore.svg" width="48" />
+		</div>
 	</div>
+	<div class="section">
+		<h1>A Basic 3D Model Rendering with Three.js</h1>
+	</div>
+</div>
 </body>
 
 </html>
