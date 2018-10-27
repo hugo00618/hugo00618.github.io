@@ -15,12 +15,15 @@ var addObject = function(object) {
 
 $(document).ready(function() {
 	scene = new THREE.Scene();
-	camera = new THREE.PerspectiveCamera( 75, 1, 0.1, 1000 );
-
+	
 	renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});
 	var containerMinSize = Math.min($('#canvas').innerHeight(), $('#canvas').innerWidth());
 	renderer.setSize(containerMinSize, containerMinSize);
 	$('#canvas').append( renderer.domElement );
+
+ 	camera = new THREE.OrthographicCamera( containerMinSize / - 2, containerMinSize / 2, containerMinSize / 2, containerMinSize / - 2, 0.1, 1000 );
+ 	camera.zoom = 2;
+ 	camera.updateProjectionMatrix();
 
 	// control
 	var controls = new THREE.OrbitControls(camera, renderer.domElement);
@@ -30,6 +33,8 @@ $(document).ready(function() {
 
 	controls.minPolarAngle = Math.PI / 180 * 80;
 	controls.maxPolarAngle = Math.PI / 180 * 80;
+
+	controls.rotateSpeed = 0.2;
 
 	
 	// light
