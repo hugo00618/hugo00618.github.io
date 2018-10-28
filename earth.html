@@ -35,7 +35,7 @@
 			<div class="intro">
 				<h1>A Basic 3D Model Rendering with Three.js</h1>
 				<p>
-					This is a simple 3D rendering inspired by <a target="_blank" rel="noopener noreferrer" href="https://panic.com/transmit/">Transmit website</a>. It uses three.js, a JavaScript library based on WebGL that's easy to set up and provides various functionalities for 3D graphics.
+					This is a simple 3D rendering inspired by <a target="_blank" rel="noopener noreferrer" href="https://panic.com/transmit/">Transmit website</a>. It uses <a target="_blank" rel="noopener noreferrer" href="https://threejs.org/">three.js</a>, a JavaScript library based on WebGL that's easy to set up and provides various functionalities for 3D graphics.
 				</p>
 				<h2>Modeling</h2>
 				<p>
@@ -74,7 +74,7 @@ var camera = new THREE.OrthographicCamera(left, right, top, bottom, near, far)</
 				</p>
 				<h3>Loading External .obj Files</h3>
 				<p>
-					three.js provides a bunch of primitive geometries but it would be easier if you do the modeling in a software and import your model into the scene. Supported external file format includes .obj and .stl. In my case, I used .obj files:
+					three.js provides a bunch of primitive geometries but it would be easier if you do the modeling in a software and import your model into the scene. Supported external file formats include .obj and .stl. In my case, I used .obj files:
 				</p>
 				<pre class="prettyprint linenums">
 var loader = new THREE.OBJLoader();
