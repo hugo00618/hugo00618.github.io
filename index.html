@@ -3,10 +3,55 @@
 
 <head>
     <title>Hugo Yu</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <style>
+    	* {
+    		font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color: #333;
+    	}
+
+    	strong {
+    		display: block;
+    		font-weight: 700;
+    		margin-bottom: 8px;
+    	}
+
+    	.thumbnail_wrapper {
+    		position: relative;
+    		display: inline-block;
+    	}
+
+    	.thumbnail_wrapper > span {
+    		position: absolute;
+    		left: 0;
+    		right: 0;
+    		top: 0;
+    		bottom: 0;
+    		background: #fff;
+    		opacity: 0;
+    		padding: 16px;
+    		transition: .25s ease;
+    	}
+
+    	.thumbnail_wrapper > span:hover {
+    		opacity: 0.8;
+    	}
+    </style>
 </head>
 
 <body>
-    <a href="/earth.html">CVC</a>
+    <a class="thumbnail" href="/earth.html">
+    	<div class="thumbnail_wrapper">
+    	<img src="assets/thumb_earth.png" width="400"/>
+    	<span>
+    		<strong>Earth</strong>
+    		A 3D rendering with three.js
+    	</span>
+    </div>
+    </a>
 </body>
 
 </html>
