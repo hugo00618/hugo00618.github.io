@@ -14,6 +14,7 @@
 	<script src="js/ObjectLoader.js"></script>
 	<script src="js/OrbitControls.js"></script>
 
+	<script src="js/scrolloverflow.min.js"></script>
 	<script src="js/fullpage.js"></script>
 
 	<script src="js/earth.js"></script>
@@ -22,16 +23,40 @@
 
 <body>
 	<div id="fullpage" style="height: 100%">
-	<div class="landing section">
-		<div id="canvas"></div>
-		<div class="learnmore_wrapper">
-			<input id="btnLearnMore" class="btn_learnmore" type="image" src="assets/ic_learnmore.svg" width="48" />
+		<div class="landing section">
+			<div id="canvas"></div>
+			<div class="learnmore_wrapper">
+				<input id="btnLearnMore" class="btn btn_learnmore" type="image" src="assets/ic_learnmore.svg" width="48" />
+			</div>
+		</div>
+		<div class="section">
+			<div class="intro">
+				<h1>A Basic 3D Model Rendering with Three.js</h1>
+				<p>
+					This is a simple 3D rendering inspired by <a target="_blank" rel="noopener noreferrer" href="https://panic.com/transmit/">Transmit website</a>. It uses three.js, a JavaScript library based on WebGL that's easy to set up and provides various functionalities for 3D graphics.
+				</p>
+				<h2>Modeling</h2>
+				<p>
+					Modeling was done through C4D. The main idea was to have the Earth model and select all the faces that are land and extrude them out. I downloaded a world map and used it as a texture for a regular sphere so that I had a good reference I could work on. The most tedious part was to select the faces of land, espeically when dealing with those small islands in Southeast Asia. But later I found that it didn't need to be really precise as I was going to low-poly it anyway...
+				</p>
+				<div class="image_wrapper">
+					<img class="img_screenshot" src="assets/earth_1.png"/>
+					<p class="annotation">Texture for reference</p>
+				</div>
+				<p>
+					Since my reference image was a satellite map where it shows parts of the land close to the poles are covered by snow, I was able to map them seperately and extrude them a little bit more so it creates a feeling of snow covering the ground. Finally, just throw everything into a Polygon Reduction object and C4D will do the low poly trick for you.
+				</p>
+				<div class="image_wrapper">
+					<img class="img_screenshot" src="assets/earth_2.png"/>
+					<p class="annotation">Model</p>
+				</div>
+				<div class="image_wrapper">
+					<img class="img_screenshot" src="assets/earth_3.png"/>
+					<p class="annotation" style="margin-top: 4px;">A C4D render just for fun</p>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="section">
-		<h1>A Basic 3D Model Rendering with Three.js</h1>
-	</div>
-</div>
 </body>
 
 </html>

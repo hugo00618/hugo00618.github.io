@@ -100,7 +100,8 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
 
-		verticalCentered: false
+		verticalCentered: false,
+		scrollOverflow: true
 	}); 
 
 	$('#btnLearnMore').click(function() {
