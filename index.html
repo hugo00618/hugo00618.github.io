@@ -13,16 +13,32 @@
 			color: #333;
     	}
 
+        body {
+            background: #eee;
+        }
+
     	strong {
     		display: block;
     		font-weight: 700;
     		margin-bottom: 8px;
     	}
 
+        .thumbnail_container {
+            display: inline-block;
+            padding: 8px;
+            background: #fff;
+            box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
+            border-radius: 2px;
+        }
+
     	.thumbnail_wrapper {
     		position: relative;
     		display: inline-block;
     	}
+
+        .thumbnail_wrapper > img {
+            display: block;
+        }
 
     	.thumbnail_wrapper > span {
     		position: absolute;
@@ -32,7 +48,7 @@
     		bottom: 0;
     		background: #fff;
     		opacity: 0;
-    		padding: 16px;
+    		padding: 8px;
     		transition: .25s ease;
     	}
 
@@ -43,15 +59,17 @@
 </head>
 
 <body>
+    <div class="thumbnail_container">
     <a class="thumbnail" href="/earth">
-    	<div class="thumbnail_wrapper">
-    	<img src="assets/thumb_earth.png" width="400"/>
-    	<span>
-    		<strong>Earth</strong>
-    		A 3D rendering with three.js
-    	</span>
-    </div>
+        <div class="thumbnail_wrapper">
+    	   <img src="assets/thumb_earth.png" width="400"/>
+    	   <span>
+    		  <strong>Earth</strong>
+    		  A 3D rendering with three.js
+    	   </span>
+        </div>
     </a>
+</div>
 </body>
 
 </html>
