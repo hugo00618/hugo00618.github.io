@@ -4,72 +4,58 @@
 <head>
     <title>Hugo Yu</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <style>
-    	* {
-    		font-family: 'Lato', sans-serif;
-			font-weight: 400;
-			color: #333;
-    	}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        body {
-            background: #eee;
-        }
-
-    	strong {
-    		display: block;
-    		font-weight: 700;
-    		margin-bottom: 8px;
-    	}
-
-        .thumbnail_container {
-            display: inline-block;
-            padding: 8px;
-            background: #fff;
-            box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
-            border-radius: 2px;
-        }
-
-    	.thumbnail_wrapper {
-    		position: relative;
-    		display: inline-block;
-    	}
-
-        .thumbnail_wrapper > img {
-            display: block;
-        }
-
-    	.thumbnail_wrapper > span {
-    		position: absolute;
-    		left: 0;
-    		right: 0;
-    		top: 0;
-    		bottom: 0;
-    		background: #fff;
-    		opacity: 0;
-    		padding: 8px;
-    		transition: .25s ease;
-    	}
-
-    	.thumbnail_wrapper > span:hover {
-    		opacity: 0.8;
-    	}
-    </style>
+    <script src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="thumbnail_container">
-    <a class="thumbnail" href="/earth">
+    <div style="height: 100%; position: relative;">
+        <div class="left_section">
+            <img id="title" class="title" src="assets/title.svg" />
+
+            <div id="intro" class="intro">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo velit, hendrerit ut mollis et, consectetur in velit. Vestibulum elementum eget justo et dapibus. Sed dolor mauris, aliquet eu fringilla quis, tincidunt quis justo. Integer facilisis eros vitae velit malesuada dictum. Maecenas vel nulla turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra leo lorem, sed consequat sapien tincidunt et. Nunc non quam nec arcu vestibulum mattis quis eget massa. Quisque massa est, bibendum a metus sed, rutrum luctus justo. In non placerat nulla. Donec pellentesque, enim at lobortis suscipit, metus tellus commodo elit, eu pretium arcu sem eget eros. Fusce fringilla leo in nisl vehicula, eget lobortis lacus dapibus. Nulla eget lacus accumsan, tempor ipsum ac, tristique neque. Proin suscipit arcu eu magna viverra molestie. Nunc scelerisque massa eget sem finibus efficitur.
+            </p>
+            <div class="contact">
+                <a href="mailto:guo.yu@edu.uwaterloo.ca">
+                    <img class="img_contact" src="assets/ic_mail.svg" />
+                </a>
+                <a href="https://github.com/hugo00618/">
+                    <img class="img_contact" src="assets/ic_github.svg" />
+                </a>
+                <a href="https://www.linkedin.com/in/hugo00618/">
+                    <img class="img_contact" src="assets/ic_linkedin.svg" />
+                </a>
+            </div>
+        </div>
+        </div>
+
+        <div class="right_section">
+        </div>
+
+        <div style="clear: both;"></div>
+
+<!--         <div>
+            <a class="thumbnail" href="/earth">
         <div class="thumbnail_wrapper">
-    	   <img src="assets/thumb_earth.png" width="400"/>
-    	   <span>
-    		  <strong>Earth</strong>
-    		  A 3D rendering with three.js
-    	   </span>
+           <img src="assets/thumb_earth.png" width="400"/>
+           <span>
+              <strong>Earth</strong>
+              A 3D rendering with three.js
+           </span>
         </div>
     </a>
-</div>
+        </div> -->
+    </div>
+    </div>
+<!--     <div class="thumbnail_container">
+
+</div> -->
 </body>
 
 </html>

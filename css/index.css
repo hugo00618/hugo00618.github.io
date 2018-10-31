@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Museo Sans";
+    src: url(MuseoSans_500-webfont.woff);
+}
+
+* {
+  font-family: 'Museo Sans', sans-serif;
+  font-weight: 400;
+  color: #333;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    background: #eee;
+    margin: 0;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.vert_center_helper {
+    vertical-align: middle;
+    height: 100%;
+    display: inline-block;
+}
+
+.vert_center {
+    vertical-align: middle;
+}
+
+.left_section {
+    width: 50%; 
+    float: left; 
+    padding-left: 48px; 
+    padding-top: 156px;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 25%;
+    transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1),
+                top 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.title.collapse-animation {
+    height: 108px;
+    top: 48px;
+    left: 48px;
+    transform: initial;
+}
+
+.intro {
+    opacity: 0;
+    margin: 0px;
+    margin-top: 36px;
+    margin-bottom: 18px;
+    transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.intro.expanded {
+    opacity: 1;
+    margin-top: 24px;
+}
+
+.img_contact {
+    width: 30px;
+}
+
+.img_contact:hover {
+    opacity: 0.7;
+}
+
+.contact > a {
+    margin-left: 9px;
+}
+
+.contact > a:first-child {
+    margin-left: 0;
+}
+
+.right_section {
+    width: 50%; 
+    float: right;
+}
+
+.thumbnail_container {
+    display: inline-block;
+    padding: 8px;
+    background: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.23), 0 3px 6px 0 rgba(0,0,0,0.16);
+    border-radius: 2px;
+}
+
+.thumbnail_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.thumbnail_wrapper > img {
+    display: block;
+}
+
+.thumbnail_wrapper > span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0;
+    padding: 8px;
+    transition: .25s ease;
+}
+
+.thumbnail_wrapper > span:hover {
+    opacity: 0.8;
+}
