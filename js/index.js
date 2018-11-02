@@ -1,17 +1,14 @@
 $(document).ready(function() {
+	// IE9, Chrome, Safari, Opera
+	window.addEventListener('mousewheel', collapseTitle, false);
+	// Firefox
+	window.addEventListener('DOMMouseScroll', collapseTitle, false);
 
-	if (window.addEventListener) {
-    	// IE9, Chrome, Safari, Opera
-    	window.addEventListener("mousewheel", MouseWheelHandler, false);
-    	// Firefox
-    	window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
-	} else { // IE 6/7/8
-		window.attachEvent("onmousewheel", MouseWheelHandler);
-	}
-
+	window.addEventListener('click', collapseTitle);
+	window.addEventListener('touchstart', collapseTitle);  	
 });
 
-function MouseWheelHandler() {
+function collapseTitle() {
 	$('#title').addClass('collapse-animation');
 
 	setTimeout(function() {
