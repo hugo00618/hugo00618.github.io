@@ -11,7 +11,7 @@
 # (Using that method instead of site.owner, in case your posts get cloned with your repo.)
 
 # Site settings
-title: _site name_
+title: Hugo Yu
 description: _description_
 owner:
   name: _your name_ # or company name
