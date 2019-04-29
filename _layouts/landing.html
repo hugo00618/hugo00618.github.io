@@ -14,8 +14,10 @@
         <!-- Banner -->
           <section id="banner">
             <div class="inner">
-              <h1>{{ site.title }}</h1>
-              <p>{{ site.description }}</p>
+              <!-- <h1>{{ site.title }}</h1>
+              <p>{{ site.description }}</p> -->
+
+              <img src="images/title.svg" style="max-width:80%" />
               <!--
               <ul class="actions">
                 <li><a href="#" class="button special">Activate</a></li>
@@ -23,15 +25,15 @@
               -->
             </div>{%
             if site.greeting %}
-            <a href="#greeting" class="more scrolly">Continue</a>{%
+            <a href="#greeting" class="more scrolly"></a>{%
             else %}
-            <a href="#landing_pages" class="more scrolly">Continue</a>{%
+            <a href="#landing_pages" class="more scrolly"></a>{%
             endif %}
           </section>
           {%
           if site.greeting %}
         <!-- One -->
-          <section id="greeting" class="wrapper style1 special">
+          <!-- <section id="greeting" class="wrapper style1 special">
             <div class="inner">
               <header class="major">
                 <h2>{% if site.greeting.title %}{{ site.greeting.title }}{% else %}{{ site.title }}{% endif %}</h2>
@@ -55,7 +57,7 @@
               </ul>
             </div>
           </section>{%
-          endif %}
+          endif %} -->
 
         <!-- Two -->
           <section id="landing_pages" class="wrapper alt style2">{%
