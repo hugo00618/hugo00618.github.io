@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Museo Sans";
+    src: url(MuseoSans_500-webfont.woff);
+}
+
+* {
+    font-family: 'Museo Sans', sans-serif !important;
+    font-weight: 400 !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        opacity: 0;
+    }
+    #mainNav.navbar-scrolled {
+        opacity: 0.9;
+    }
+}
+
+#mainNav .navbar-brand>img {
+    height: 1.25em;
+}
+
+header.masthead:before {
+    content: " ";
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+}
+
+header.masthead.transition:before {
+    opacity: 1;
+}
+
+header.masthead {
+    height: 100%;
+    background-color: #000;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .1) 100%), url(../img/bg-masthead.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.photo-info-btn {
+    opacity: 0.5;
+}
+
+.photo-info-wrapper:hover .photo-info-btn {
+    opacity: 0.8;
+}
+
+.photo-info-container {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #eee;
+    font-size: 12px;
+    width: 160px;
+    display: none;
+    padding: 8px;
+    margin-right: 12px;
+    text-align: right;
+}
+
+.photo-info-wrapper:hover .photo-info-container {
+    display: initial;
+}

@@ -1,97 +1,68 @@
-# arkadianriver.com
+# [Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
 
-My personal web site, using the awesome design of http://html5up.net/spectral by
-the talented [@ajlkn](http://twitter.com/ajlkn).
+[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
-I morphed that design into this Jekyll [theme](#theme-note) for blog and portfolio entries.
-[Jekyll](https://jekyllrb.com) is a static site generator, which
-uses templates to generate all the publishable content as static
-HTML files (as opposed to something like WordPress, which has files that pull
-data from a database at runtime).
-This repo is the exact same code I use for my site (excluding my posts and
-some data files created from templates where noted).
+## Preview
 
-- [Features](https://arkadianriver.github.io/arkadianriver.com/topics/user-guide/features.html)
-- [Authoring Guide](https://arkadianriver.github.io/arkadianriver.com/topics/user-guide/)
+[![Creative Preview](https://startbootstrap.com/assets/img/screenshots/themes/creative.png)](https://blackrockdigital.github.io/startbootstrap-creative/)
 
-## If you like it
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
 
-You can clone or fork this repo as a [theme](#theme-note) for your own blog.
-Because it doesn't use any plugins, you can easily
-[host it on GitHub Pages](https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages).
-Even so, I recommend cloning your fork locally to create and preview your posts,
-regardless of where you choose to publish.
+## Status
 
-With it downloaded and with Ruby, RubyGems, and Jekyll 3.1.2 or higher installed, you can use the post-creation script,
-preview how your site looks and functions, and properly view the theme's User Guide.
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-creative.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-creative)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative?type=dev)
 
-1. Personalize the information in the [YAML files](http://www.yaml.org/start.html).
+## Download and Installation
 
-   File | Action
-   -----|-------
-   **`_config.yml`** | Replace the values for each key with your info.
-   **`_data/tokens.yml`** | Create this file, using `_data/tokens-template.yml` as an example.
-   **`_data/authors.yml`** | Add author info for yourself as the first entry in the file.
+To begin using this template, choose one of the following options to get started:
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/creative/)
+* Install via npm: `npm i startbootstrap-creative`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-creative)
 
-1. Personalize the images with your own, and change the attribution for your new banner
-   at the bottom of `_data/credits.yml`.
+## Usage
 
-   Image | Description
-   ------|------------
-   **`banner.jpg`** | The main large image on the front page
-   **`pic01.jpg`** | The topics image
-   **`pic02.jpg`** | The works image
+### Basic Usage
 
-1. From the repo's root directory, start Jekyll to preview as you write.
-   
-   ```
-   bundle exec jekyll serve --future --drafts
-   ```
-      
-1. Open a browser to http://localhost:4000 (or the port number that jekyll indicates to open).
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
+### Advanced Usage
 
-1. Compose your first post!
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-   ```
-   ruby compose.rb
-   ```
+#### Gulp Tasks
 
-   The User Guide describes some features that might be useful: http://localhost:4000/topics/user-guide/
+- `gulp` the default task that builds everything
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
+- `gulp js` minifies the themes JS file
+- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-1. Test and publish your site:
+You must have npm and Gulp installed globally on your machine in order to use these features.
 
-   If you're building your site on Windows (like me) you can use the `site.bat` file;
-   otherwise, just use the Jekyll commands as indicated in the site command reference below.
-   
-   If you use WinSCP to sync with your remote site, you can use the _publish_ option.
-   To publish with WinSCP, set up a `_site.env` file as described in the comments of `site.bat`,
-   being _particularly careful_ to list your site remote path and excludes correctly because the
-   script uses the `syncronize -delete` option to mirror the entire remote folder to the local one.
-   Otherwise, see the [various publishing options](https://jekyllrb.com/docs/deployment-methods/)
-   in Jekyll's documentation.
+## Bugs and Issues
 
-   ```bash
-   site {dev|devnof|preview|prod|publish}
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
 
-     dev     Runs Jekyll in development watch mode:
-               jekyll serve --future --drafts
+## About
 
-     devnof  Runs Jekyll in development watch mode without future posts:
-               jekyll serve --drafts
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-     preview Runs Jekyll in production watch mode:
-               jekyll serve
+* https://startbootstrap.com
+* https://twitter.com/SBootstrap
 
-     prod    Builds production content without watch mode:
-               jekyll build
+Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-     publish Uses WinSCP's synchronize feature to mirror to a remote site.
-   ```
+* http://davidmiller.io
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
-## Theme note
-This is a theme in the old sense of the word. This is not a newer _gem-based_ theme (yet).
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## License
-MIT
+## Copyright and License
 
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
