@@ -24,9 +24,17 @@
     height: 1.25em;
 }
 
+#dummy {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
 header.masthead:before {
     content: " ";
-    background: #000;
+    background: #111;
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +50,6 @@ header.masthead.transition:before {
 
 header.masthead {
     height: 100%;
-    background-color: #000;
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0, rgba(0, 0, 0, .1) 100%), url(../img/bg-masthead.jpg); */
     background-position: center;
     background-repeat: no-repeat;

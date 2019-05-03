@@ -12,20 +12,24 @@ $(document).ready(function () {
 
 })
 
-$('#imgTitle').click(function() {
+$('#imgTitle').click(function () {
     $("header.masthead").toggleClass("transition");
     idx++;
     idx %= bgData.length;
-    setTimeout(function() {
+    setTimeout(function () {
         setBg();
-        setTimeout(function() {
+        setTimeout(function () {
             $("header.masthead").toggleClass("transition");
         }, 100);
     }, 400);
 });
 
 function setBg() {
-    $("header.masthead").css("background-image", 
-    "linear-gradient(to bottom, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .2) 100%), url(" + bgData[idx].url + ")");
+    $("header.masthead").css("background-image",
+        "linear-gradient(to bottom, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .2) 100%), url(" + bgData[idx].url + ")");
     $("#photoInfoContainer").html(unescape(bgData[idx].exif));
+
+    // preload next image
+    var nextIdx = (idx + 1) % bgData.length;
+    $("#dummy").css("background-image", "url(" + bgData[nextIdx].url + ")");
 }
