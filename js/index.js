@@ -13,6 +13,8 @@ $(document).ready(function () {
 })
 
 $('#imgTitle').click(function () {
+    if ($("header.masthead").hasClass("transition")) return;
+    
     $("header.masthead").toggleClass("transition");
     idx++;
     idx %= bgData.length;
