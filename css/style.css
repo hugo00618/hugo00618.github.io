@@ -16,13 +16,13 @@
 }
 
 .page-section {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
     .page-section {
-        padding-top: 8rem;
+        padding-top: 6rem;
         padding-bottom: 4rem;
     }
 }
