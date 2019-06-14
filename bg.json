@@ -1,11 +1,7 @@
 [
     {
         "url": "../img/bg/bg-masthead.jpg",
-        "exif": "Yellowknife, NT, Canada\nDecember 2018\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 16mm\nf/4; 10 sec; ISO 6400"
-    },
-    {
-        "url": "../img/bg/IMG_9704.jpg",
-        "exif": "My tiny little train\nMarch 2019\n\nCanon EOS 500D\nEF-S 35mm f/2.8 Macro\nf/2.8; 1/25 sec; ISO 800"
+        "exif": "Northern lights in Yellowknife, NT, Canada\nDecember 2018\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 16mm\nf/4; 10 sec; ISO 6400"
     },
     {
         "url": "../img/bg/IMG_2560_land.jpg",
@@ -13,6 +9,21 @@
     },
     {
         "url": "../img/bg/IMG_3834.jpg",
-        "exif": "Guangdong, China\nMay 2019\n\niPhone X"
+        "exif": "\"May you get everything you wish for\"\nGuangdong, China\nMay 2019\n\niPhone X"
+    },
+    {
+        "url": "../img/bg/IMG_2932.jpg",
+        "exif": "Skyscrapers in Lujiazui, Shanghai\nJune 2019\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 16mm\nf/4; 1/20 sec; ISO 1600"
+        
+    },
+    {
+        "url": "../img/bg/IMG_4759.jpg",
+        "exif": "On a local train in Japan\nJune 2019\n\niPhone X"
+        
+    },
+    {
+        "url": "../img/bg/IMG_3078.jpg",
+        "exif": "Steam locomotive\nKyoto Railway Museum, Kyoto, Japan\nJune 2019\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 35mm\nf/4; 1/200 sec; ISO 100"
+        
     }
 ]
