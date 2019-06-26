@@ -9,7 +9,7 @@
     },
     {
         "url": "../img/bg/IMG_3834.jpg",
-        "exif": "\"May you get everything you wish for\"\nGuangdong, China\nMay 2019\n\niPhone X"
+        "exif": "\"May you get all you wish for\"\nGuangdong, China\nMay 2019\n\niPhone X"
     },
     {
         "url": "../img/bg/IMG_2932.jpg",
@@ -24,6 +24,11 @@
     {
         "url": "../img/bg/IMG_3078.jpg",
         "exif": "Steam locomotive\nKyoto Railway Museum, Kyoto, Japan\nJune 2019\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 35mm\nf/4; 1/200 sec; ISO 100"
+        
+    },
+    {
+        "url": "../img/bg/IMG_3289.jpg",
+        "exif": "Kobe, Japan\nJune 2019\n\nCanon EOS 6D Mark II\nEF 16-35mm f/4 @ 29mm\nf/4; 1/40 sec; ISO 6400"
         
     }
 ]
