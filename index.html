@@ -73,10 +73,8 @@
                         <img src="img/ic_learnmore.svg" width=36 style="margin-bottom: 1.5rem;" />
                     </a>
                     <div class="float-right photo-info-wrapper">
-                        <div style="position: relative">
-                            <div id="photoInfoContainer" class="photo-info-container" style="white-space: pre-line;">
-
-                            </div>
+                        <div style="position: relative; width: 256px;">
+                            <div class="photo-info-container"><div id="photoInfo" class="photo-info"></div></div>
                         </div>
                         <img class="btn float-right photo-info-btn" width=48 src="img/ic_info.svg" />
                     </div>
@@ -142,6 +140,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio">
+
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-lg-4 col-sm-6">
@@ -153,6 +152,20 @@
                             </div>
                             <div class="text-white-50">
                                 A simple WebGL 3D model rendering with three.js
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="https://github.com/hugo00618/MyTrainControl">
+                        <img class="img-fluid" src="img/portfolio/tcri.png" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="project-name">
+                                Project Train Control
+                            </div>
+                            <div class="text-white-50">
+                                A DCC autonomus railway control system
                             </div>
                         </div>
                     </a>
@@ -208,9 +221,10 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
+    <script src="js/xml2json.js"></script>
     <script src="js/creative.min.js"></script>
     <script src="js/index.js"></script>
-
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128222490-1"></script>
     <script>

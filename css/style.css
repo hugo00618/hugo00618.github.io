@@ -43,6 +43,13 @@ hr.divider {
     z-index: -1;
 }
 
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
 header.masthead:before {
     content: " ";
     background: #111;
@@ -85,21 +92,27 @@ header.masthead {
 }
 
 .photo-info-container {
+    white-space: pre-line;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 0;
     right: 0;
     color: #eee;
     font-size: 12px;
-    width: 160px;
     display: none;
     padding: 8px;
     margin-right: 12px;
     text-align: right;
 }
 
+.photo-info {
+    position: relative;
+    display: inline-block;
+    max-width: 256px;
+}
+
 .photo-info-wrapper:hover .photo-info-container {
-    display: initial;
+    display: block;
 }
 
 .contact-anchor {
