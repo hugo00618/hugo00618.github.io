@@ -109,7 +109,6 @@ function fetchPhotoExif(idx) {
 
 function getExif(idx) {
     let exif = photoInfos[idx]['exif'];
-    console.log(exif);
     let model = exif['Model'];
 
     let lens = exif['Lens Model'];
