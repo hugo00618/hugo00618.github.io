@@ -1,3 +1,5 @@
+'use strict';
+
 const FLICKR_USER_ID = '61817691@N02';
 const FLICKR_API_KEY = 'bd5904026d0ec07df8569a4953de0d84';
 const FLICKR_REST_API_ENDPOINT = 'https://www.flickr.com/services/rest/';

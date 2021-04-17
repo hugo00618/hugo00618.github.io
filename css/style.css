@@ -3,6 +3,11 @@
     src: url(MuseoSans_500-webfont.woff);
 }
 
+@font-face {
+    font-family: "Amazon";
+    src: url(amazon.woff);
+}
+
 * {
     font-family: 'Museo Sans', sans-serif !important;
     font-weight: 400 !important;
@@ -145,6 +150,23 @@ header.masthead {
     }
 }
 
+.amazon {
+    font-size: 11px;
+    color: #000;
+    font-family: 'Amazon', sans-serif !important;
+    letter-spacing: 0.15em;
+    position: relative;
+}
+
+.amazon::after {
+    content: "\00a0";
+    color: #ff9900;
+    position: absolute;
+    top: 100%;
+    left: 9px;
+    font-size: 8px;
+}
+
 /* dark mode */
 .my-bg-light {
     background-color: #f8f9fa;
@@ -183,5 +205,9 @@ header.masthead {
 
     .my-bg-light {
         background-color: #222;
+    }
+
+    .amazon {
+        color: #fff;
     }
 }
