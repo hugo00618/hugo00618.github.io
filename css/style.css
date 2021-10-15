@@ -167,6 +167,15 @@ header.masthead {
     font-size: 8px;
 }
 
+#portfolio-container-tcri > .portfolio-box {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/portfolio/tcri.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 /* dark mode */
 .my-bg-light {
     background-color: #f8f9fa;
@@ -209,5 +218,9 @@ header.masthead {
 
     .amazon {
         color: #fff;
+    }
+
+    #portfolio-container-tcri > .portfolio-box {
+        background-image: url('../img/portfolio/tcri_dark.png');
     }
 }
